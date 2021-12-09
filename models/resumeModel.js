@@ -8,13 +8,16 @@ const resumeSchema = new mongoose.Schema({
     skils: {
         type: Array
     },
-    about: {
+    professional_experience: {
         type: String
     },
     age: {
         type: Number
     },
+    summary: {
+        type: String
+    },
 
 })
-const resume = mongoose.model(`resume itamar`, resumeSchema)
+const resume = mongoose.model(`resume of ${process.env.USERNAME_DATA} `, resumeSchema)
 module.exports = resume
