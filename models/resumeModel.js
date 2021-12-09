@@ -16,3 +16,5 @@ const resumeSchema = new mongoose.Schema({
     },
 
 })
+const resume = mongoose.model(`resume ${process.env.USERNAME}`, resumeSchema)
+module.exports = resume
