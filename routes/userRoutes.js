@@ -2,6 +2,6 @@ const userController = require('./../controllers/user_controller');
 const express = require("express")
 const router = express.Router();
 router
-    .route('/:id')
-    .get(userController.getUserData)
+    .route('/:name').get(userController.getUserData)
+    .post(userController.updateUserData)
 module.exports = router

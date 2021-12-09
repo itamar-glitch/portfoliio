@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const resumeSchema = new mongoose.Schema({
     name: {
-        type=String,
+        type: String,
         required: [true, "i need you name"],
         unique: true
     },
@@ -16,5 +16,5 @@ const resumeSchema = new mongoose.Schema({
     },
 
 })
-const resume = mongoose.model(`resume ${process.env.USERNAME}`, resumeSchema)
+const resume = mongoose.model(`resume itamar`, resumeSchema)
 module.exports = resume
